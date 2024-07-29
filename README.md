@@ -1,2 +1,2 @@
 # competitive_coding
-solutions of problems (both problemset and contests) on platforms like codeforces,atcoder,codechef etc.
+solutions to problems (both problemset and contests) on platforms like codeforces,atcoder,codechef etc.
