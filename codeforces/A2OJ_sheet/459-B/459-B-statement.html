@@ -1,0 +1,102 @@
+<div class="ttypography">
+    <div class="problem-statement">
+        <div class="header">
+            <div class="title">B. Pashmak and Flowers</div>
+            <div class="time-limit">
+                <div class="property-title">time limit per test</div>1 second
+            </div>
+            <div class="memory-limit">
+                <div class="property-title">memory limit per test</div>256 megabytes
+            </div>
+            <div class="input-file input-standard" style="font-weight: bold">
+                <div class="property-title">input</div>stdin
+            </div>
+            <div class="output-file output-standard" style="font-weight: bold">
+                <div class="property-title">output</div>stdout
+            </div>
+        </div>
+        <div>
+            <p>Pashmak decided to give Parmida a pair of flowers from the garden. There are <span
+                    class="tex-span"><i>n</i></span> flowers in the garden and the <span
+                    class="tex-span"><i>i</i></span>-th of them has a beauty number <span class="tex-span"><i>b</i><sub
+                        class="lower-index"><i>i</i></sub></span>. Parmida is a very strange girl so she doesn't want to
+                have the two most beautiful flowers necessarily. She wants to have those pairs of flowers that their
+                beauty difference is maximal possible!</p>
+            <p>Your task is to write a program which calculates two things:</p>
+            <ol>
+                <li> The maximum beauty difference of flowers that Pashmak can give to Parmida. </li>
+                <li> The number of ways that Pashmak can pick the flowers. Two ways are considered different if and only
+                    if there is at least one flower that is chosen in the first way and not chosen in the second way.
+                </li>
+            </ol>
+        </div>
+        <div class="input-specification">
+            <div class="section-title">Input</div>
+            <p>The first line of the input contains <span class="tex-span"><i>n</i></span> <span
+                    class="tex-span">(2 ≤ <i>n</i> ≤ 2·10<sup class="upper-index">5</sup>)</span>. In the next line
+                there are <span class="tex-span"><i>n</i></span> space-separated integers <span
+                    class="tex-span"><i>b</i><sub class="lower-index">1</sub></span>, <span
+                    class="tex-span"><i>b</i><sub class="lower-index">2</sub></span>, ..., <span
+                    class="tex-span"><i>b</i><sub class="lower-index"><i>n</i></sub></span> <span
+                    class="tex-span">(1 ≤ <i>b</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup
+                        class="upper-index">9</sup>)</span>.</p>
+        </div>
+        <div class="output-specification">
+            <div class="section-title">Output</div>
+            <p>The only line of output should contain two integers. The maximum beauty difference and the number of ways
+                this may happen, respectively.</p>
+        </div>
+        <div class="sample-tests">
+            <div class="section-title">Examples</div>
+            <div class="sample-test">
+                <div class="input">
+                    <div class="title">Input<div title="Copy" data-clipboard-target="#id003310698242430121"
+                            id="id007680031178797123" class="input-output-copier">Copy</div>
+                    </div>
+                    <pre id="id003310698242430121">2<br>1 2<br></pre>
+                </div>
+                <div class="output">
+                    <div class="title">Output<div title="Copy" data-clipboard-target="#id0003390437312281536"
+                            id="id0024548043802006236" class="input-output-copier">Copy</div>
+                    </div>
+                    <pre id="id0003390437312281536">1 1</pre>
+                </div>
+                <div class="input">
+                    <div class="title">Input<div title="Copy" data-clipboard-target="#id007040680444201826"
+                            id="id007043292047127977" clas="input-output-copier">Copy</div>
+                    </div>
+                    <pre id="id007040680444201826">3<br>1 4 5<br></pre>
+                </div>
+                <div class="output">
+                    <div class="title">Output<div title="Copy" data-clipboard-target="#id0008434412548528614"
+                            id="id004031947532685751" class="input-output-copier">Copy</div>
+                    </div>
+                    <pre id="id0008434412548528614">4 1</pre>
+                </div>
+                <div class="input">
+                    <div class="title">Input<div title="Copy" data-clipboard-target="#id0040569733562157284"
+                            id="id002182082414289569" class="input-output-copier">Copy</div>
+                    </div>
+                    <pre id="id0040569733562157284">5<br>3 1 2 3 1<br></pre>
+                </div>
+                <div class="output">
+                    <div class="title">Output<div title="Copy" data-clipboard-target="#id0033962756292367113"
+                            id="id009195438734773673" class="input-output-copier">Copy</div>
+                    </div>
+                    <pre id="id0033962756292367113">2 4</pre>
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <div class="section-title">Note</div>
+            <p>In the third sample the maximum beauty difference is <span class="tex-span">2</span> and there are <span
+                    class="tex-span">4</span> ways to do this:</p>
+            <ol>
+                <li> choosing the first and the second flowers; </li>
+                <li> choosing the first and the fifth flowers; </li>
+                <li> choosing the fourth and the second flowers; </li>
+                <li> choosing the fourth and the fifth flowers. </li>
+            </ol>
+        </div>
+    </div>
+</div>s
