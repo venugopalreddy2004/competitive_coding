@@ -1,0 +1,408 @@
+<div class="problem-statement">
+    <div class="header">
+        <div class="title">B. Petr and a Combination Lock</div>
+        <div class="time-limit">
+            <div class="property-title">time limit per test</div>1 second
+        </div>
+        <div class="memory-limit">
+            <div class="property-title">memory limit per test</div>256 megabytes
+        </div>
+        <div class="input-file input-standard">
+            <div class="property-title">input</div>standard input
+        </div>
+        <div class="output-file output-standard">
+            <div class="property-title">output</div>standard output
+        </div>
+    </div>
+    <div>
+        <p>Petr has just bought a new car. He's just arrived at the most known Petersburg's petrol station to refuel it
+            when he suddenly discovered that the petrol tank is secured with a combination lock! The lock has a scale of
+            <span class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>360</mn></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-1"
+                        style="width: 1.876em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 1.525em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.408em, 1001.47em, 2.403em, -999.997em); top: -2.222em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-2"><span class="mn" id="MathJax-Span-3"
+                                        style="font-family: MathJax_Main;">360</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.228em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.004em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mn>360</mn>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-1">360</script> degrees and a pointer which initially points at
+            zero:
+        </p>
+        <center> <img class="tex-graphics"
+                src="https://espresso.codeforces.com/13b9223256038b68e54be700f46943f507ee6484.png"
+                style="max-width: 100.0%;max-height: 100.0%;"> </center>
+        <p>Petr called his car dealer, who instructed him to rotate the lock's wheel exactly <span
+                class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-4"
+                        style="width: 0.764em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.588em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.59em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6"
+                                        style="font-family: MathJax_Math-italic;">n</span></span><span
+                                   style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>n</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-2">n</script> times. The <span class="MathJax_Preview"
+                style="color: inherit; --darkreader-inline-color: inherit;" data-darkreader-inline-color=""></span><span
+                class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>i</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-7"
+                        style="width: 0.471em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.354em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.35em, 1000.3em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-8"><span class="mi" id="MathJax-Span-9"
+                                        style="font-family: MathJax_Math-italic;">i</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.932em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>i</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-3">i</script>-th rotation should be <span
+                class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>a</mi><mi>i</mi></msub></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-10"
+                        style="width: 0.998em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.823em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.82em, 2.52em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-11"><span class="msubsup" id="MathJax-Span-12"><span
+                                            style="display: inline-block; position: relative; width: 0.823em; height: 0px;"><span
+                                                style="position: absolute; clip: rect(3.34em, 1000.53em, 4.16em, -999.997em); top: -3.978em; left: 0em;"><span
+                                                    class="mi" id="MathJax-Span-13"
+                                                    style="font-family: MathJax_Math-italic;">a</span><span
+                                                    style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span
+                                                style="position: absolute; top: -3.803em; left: 0.53em;"><span
+                                                    class="mi" id="MathJax-Span-14"
+                                                    style="font-size: 70.7%; font-family: MathJax_Math-italic;">i</span><span
+                                                    style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 0.861em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>a</mi>
+                            <mi>i</mi>
+                        </msub>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-4">a_i</script> degrees, either clockwise or counterclockwise,
+            and after all <span class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-15"
+                        style="width: 0.764em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.588em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.59em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-16"><span class="mi" id="MathJax-Span-17"
+                                        style="font-family: MathJax_Math-italic;">n</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>n</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-5">n</script> rotations the pointer should again point at zero.
+        </p>
+        <p>This confused Petr a little bit as he isn't sure which rotations should be done clockwise and which should be
+            done counterclockwise. As there are many possible ways of rotating the lock, help him and find out whether
+            there exists at least one, such that after all <span class="MathJax_Preview"
+                style="color: inherit; --darkreader-inline-color: inherit;" data-darkreader-inline-color=""></span><span
+                class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-18"
+                        style="width: 0.764em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.588em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.59em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-19"><span class="mi" id="MathJax-Span-20"
+                                        style="font-family: MathJax_Math-italic;">n</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>n</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-6">n</script> rotations the pointer will point at zero again.
+        </p>
+    </div>
+    <div class="input-specification">
+        <div class="section-title">Input</div>
+        <p>The first line contains one integer <span class="MathJax_Preview"
+                style="color: inherit; --darkreader-inline-color: inherit;" data-darkreader-inline-color=""></span><span
+                class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-21"
+                        style="width: 0.764em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.588em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.59em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-22"><span class="mi" id="MathJax-Span-23"
+                                        style="font-family: MathJax_Math-italic;">n</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>n</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-7">n</script> (<span class="MathJax_Preview"
+                style="color: inherit; --darkreader-inline-color: inherit;" data-darkreader-inline-color=""></span><span
+                class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mo>&amp;#x2264;</mo><mi>n</mi><mo>&amp;#x2264;</mo><mn>15</mn></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-24"
+                        style="width: 5.975em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 4.862em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.408em, 1004.8em, 2.52em, -999.997em); top: -2.222em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-25"><span class="mn" id="MathJax-Span-26"
+                                        style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-27"
+                                        style="font-family: MathJax_Main; padding-left: 0.296em;">≤</span><span
+                                        class="mi" id="MathJax-Span-28"
+                                        style="font-family: MathJax_Math-italic; padding-left: 0.296em;">n</span><span
+                                        class="mo" id="MathJax-Span-29"
+                                        style="font-family: MathJax_Main; padding-left: 0.296em;">≤</span><span
+                                        class="mn" id="MathJax-Span-30"
+                                        style="font-family: MathJax_Main; padding-left: 0.296em;">15</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.228em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.211em; border-left: 0px solid; width: 0px; height: 1.146em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mn>1</mn>
+                        <mo>≤</mo>
+                        <mi>n</mi>
+                        <mo>≤</mo>
+                        <mn>15</mn>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-8">1 \leq n \leq 15</script>) — the number of rotations.
+        </p>
+        <p>Each of the following <span class="MathJax_Preview"
+                style="color: inherit; --darkreader-inline-color: inherit;" data-darkreader-inline-color=""></span><span
+                class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-31"
+                        style="width: 0.764em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.588em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.59em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-32"><span class="mi" id="MathJax-Span-33"
+                                        style="font-family: MathJax_Math-italic;">n</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>n</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-9">n</script> lines contains one integer <span
+                class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-10-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>a</mi><mi>i</mi></msub></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-34"
+                        style="width: 0.998em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.823em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.525em, 1000.82em, 2.52em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-35"><span class="msubsup" id="MathJax-Span-36"><span
+                                            style="display: inline-block; position: relative; width: 0.823em; height: 0px;"><span
+                                                style="position: absolute; clip: rect(3.34em, 1000.53em, 4.16em, -999.997em); top: -3.978em; left: 0em;"><span
+                                                    class="mi" id="MathJax-Span-37"
+                                                    style="font-family: MathJax_Math-italic;">a</span><span
+                                                    style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span
+                                                style="position: absolute; top: -3.803em; left: 0.53em;"><span
+                                                    class="mi" id="MathJax-Span-38"
+                                                    style="font-size: 70.7%; font-family: MathJax_Math-italic;">i</span><span
+                                                    style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 0.861em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>a</mi>
+                            <mi>i</mi>
+                        </msub>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-10">a_i</script> (<span class="MathJax_Preview"
+                style="color: inherit; --darkreader-inline-color: inherit;" data-darkreader-inline-color=""></span><span
+                class="MathJax" id="MathJax-Element-11-Frame" tabindex="0" style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mo>&amp;#x2264;</mo><msub><mi>a</mi><mi>i</mi></msub><mo>&amp;#x2264;</mo><mn>180</mn></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-39"
+                        style="width: 6.794em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 5.565em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.408em, 1005.51em, 2.579em, -999.997em); top: -2.222em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-40"><span class="mn" id="MathJax-Span-41"
+                                        style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-42"
+                                        style="font-family: MathJax_Main; padding-left: 0.296em;">≤</span><span
+                                        class="msubsup" id="MathJax-Span-43" style="padding-left: 0.296em;"><span
+                                            style="display: inline-block; position: relative; width: 0.823em; height: 0px;"><span
+                                                style="position: absolute; clip: rect(3.34em, 1000.53em, 4.16em, -999.997em); top: -3.978em; left: 0em;"><span
+                                                    class="mi" id="MathJax-Span-44"
+                                                    style="font-family: MathJax_Math-italic;">a</span><span
+                                                    style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span
+                                                style="position: absolute; top: -3.803em; left: 0.53em;"><span
+                                                    class="mi" id="MathJax-Span-45"
+                                                    style="font-size: 70.7%; font-family: MathJax_Math-italic;">i</span><span
+                                                    style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span
+                                        class="mo" id="MathJax-Span-46"
+                                        style="font-family: MathJax_Main; padding-left: 0.296em;">≤</span><span
+                                        class="mn" id="MathJax-Span-47"
+                                        style="font-family: MathJax_Main; padding-left: 0.296em;">180</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.228em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 1.146em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mn>1</mn>
+                        <mo>≤</mo>
+                        <msub>
+                            <mi>a</mi>
+                            <mi>i</mi>
+                        </msub>
+                        <mo>≤</mo>
+                        <mn>180</mn>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-11">1 \leq a_i \leq 180</script>) — the angle of the <span
+                class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-12-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>i</mi></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-48"
+                        style="width: 0.471em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 0.354em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.35em, 1000.3em, 2.345em, -999.997em); top: -2.163em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-49"><span class="mi" id="MathJax-Span-50"
+                                        style="font-family: MathJax_Math-italic;">i</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.932em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>i</mi>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-12">i</script>-th rotation in degrees.
+        </p>
+    </div>
+    <div class="output-specification">
+        <div class="section-title">Output</div>
+        <p>If it is possible to do all the rotations so that the pointer will point at zero after all of them are
+            performed, print a single word "<span class="tex-font-style-tt">YES</span>". Otherwise, print "<span
+                class="tex-font-style-tt">NO</span>". Petr will probably buy a new car in this case.</p>
+        <p>You can print each letter in any case (upper or lower).</p>
+    </div>
+    <div class="sample-tests">
+        <div class="section-title">Examples</div>
+        <div class="sample-test">
+            <div class="input">
+                <div class="title">Input<div title="Copy" data-clipboard-target="#id0036460129309594036"
+                        id="id0032903695932349564" class="input-output-copier">Copy</div>
+                </div>
+                <pre id="id0036460129309594036">3
+10
+20
+30
+</pre>
+            </div>
+            <div class="output">
+                <div class="title">Output<div title="Copy" data-clipboard-target="#id007801704177772828"
+                        id="id008670065768357547" class="input-output-copier">Copy</div>
+                </div>
+                <pre id="id007801704177772828">YES
+</pre>
+            </div>
+            <div class="input">
+                <div class="title">Input<div title="Copy" data-clipboard-target="#id009713858230419121"
+                        id="id009660618091426756" class="input-output-copier">Copy</div>
+                </div>
+                <pre id="id009713858230419121">3
+10
+10
+10
+</pre>
+            </div>
+            <div class="output">
+                <div class="title">Output<div title="Copy" data-clipboard-target="#id005593726042723308"
+                        id="id00952176159126265" class="input-output-copier">Copy</div>
+                </div>
+                <pre id="id005593726042723308">NO
+</pre>
+            </div>
+            <div class="input">
+                <div class="title">Input<div title="Copy" data-clipboard-target="#id006817492034569592"
+                        id="id008710367100914114" class="input-output-copier">Copy</div>
+                </div>
+                <pre id="id006817492034569592">3
+120
+120
+120
+</pre>
+            </div>
+            <div class="output">
+                <div class="title">Output<div title="Copy" data-clipboard-target="#id002630670308776273"
+                        id="id0004065949833051641" class="input-output-copier">Copy</div>
+                </div>
+                <pre id="id002630670308776273">YES
+</pre>
+            </div>
+        </div>
+    </div>
+    <div class="note">
+        <div class="section-title">Note</div>
+        <p>In the first example, we can achieve our goal by applying the first and the second rotation clockwise, and
+            performing the third rotation counterclockwise.</p>
+        <p>In the second example, it's impossible to perform the rotations in order to make the pointer point at zero in
+            the end.</p>
+        <p>In the third example, Petr can do all three rotations clockwise. In this case, the whole wheel will be
+            rotated by <span class="MathJax_Preview" style="color: inherit; --darkreader-inline-color: inherit;"
+                data-darkreader-inline-color=""></span><span class="MathJax" id="MathJax-Element-13-Frame" tabindex="0"
+                style="position: relative;"
+                data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>360</mn></math>"
+                role="presentation">
+                <nobr aria-hidden="true"><span class="math" id="MathJax-Span-51"
+                        style="width: 1.876em; display: inline-block;"><span
+                            style="display: inline-block; position: relative; width: 1.525em; height: 0px; font-size: 122%;"><span
+                                style="position: absolute; clip: rect(1.408em, 1001.47em, 2.403em, -999.997em); top: -2.222em; left: 0em;"><span
+                                    class="mrow" id="MathJax-Span-52"><span class="mn" id="MathJax-Span-53"
+                                        style="font-family: MathJax_Main;">360</span></span><span
+                                    style="display: inline-block; width: 0px; height: 2.228em;"></span></span></span><span
+                            style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.004em; --darkreader-inline-border-left: 0px solid;"
+                            data-darkreader-inline-border-left=""></span></span></nobr><span
+                    class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mn>360</mn>
+                    </math></span>
+            </span>
+            <script type="math/tex" id="MathJax-Element-13">360</script> degrees clockwise and the pointer will point at
+            zero again.
+        </p>
+    </div>
+</div> 
